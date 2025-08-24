@@ -1,11 +1,22 @@
 # creality_k2_cfs
 First informations for Creality K2 AND CFS (Creality FIlament System) Combo!
 
-K2 Combo is a new 3D printer from Creality, with a 260x260x206mm print volume and a filament system that can handle up to 4 spools of filament, codename CFS for Creality Filament System.
+![Creality K2 Serie](./resources/k2_serie.png)
+
+In the new (2025-08) K2 serie, Creality propose 3 models:
+- K2 Plus Combo: 350x350x350mm print volume
+- K2 Pro Combo: 300x300x300mm print volume
+- K2 Combo: 260x260x206mm print volume
+
+
+So, the K2 Combo is a new 3D printer from Creality, with a 260x260x206mm print volume and a filament system that can handle up to 4 spools of filament, codename CFS for Creality Filament System. I can buy 3 more CFS to have a total of 4 spools and 16 colors/filaments available.
+
 
 Until last two months I tought multi filament systems were not for me. My experiences in the past vere not ultra positive, I print since 2015 and was never conviced by the complexity and the unreliable process, then ignored these systems.
 
-But now, with the K2/CFS combo, I changed my mind. What I dislike the most in 3D printers, is the filament change. I print a lot of different models, with different filaments, and I have to change the filament often. I clearly don't want to use a multi color system, but I want to be able to load different filaments and be able to switch from one to another easily. With the CFS system, and I suppose this is the same with other multi filament systems, I can load 4 different filaments and switch from one to another in a few seconds. It is relly working for me and I like the comfort it brings: just put a filament in the CFS system, insert few centimeters of filament in the hole and the system manage the rest. No more mess with filament change, no more time lost.
+A friend of mine bought a Bambulab and told me the mutifilament is confortable. So I wanted to try again.
+
+Then now, with the K2/CFS combo, I changed my mind. What I dislike the most in 3D printers, is the filament change. I print a lot of different models, with different filaments, and I have to change the filament often. I clearly don't want to use a multi color system, but I want to be able to load different filaments and be able to switch from one to another easily. With the CFS system, and I suppose this is the same with other multi filament systems, I can load 4 different filaments and switch from one to another in a few seconds. It is relly working for me and I like the comfort it brings: just put a filament in the CFS system, insert few centimeters of filament in the hole and the system manage the rest. No more mess with filament change, no more time lost.
 
 ---
 
