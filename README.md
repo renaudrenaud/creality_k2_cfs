@@ -3,7 +3,7 @@ First informations for Creality K2 AND CFS (Creality FIlament System) Combo!
 
 ![Creality K2 Serie](./resources/k2_serie.png)
 
-In the new (2025-08) K2 serie, Creality propose 3 models:
+In the new (2025-08) K2 serie, Creality is offering 3 models:
 - K2 Plus Combo: 350x350x350mm print volume
 - K2 Pro Combo: 300x300x300mm print volume
 - K2 Combo: 260x260x206mm print volume
