@@ -1,6 +1,25 @@
 # creality_k2_cfs
 First informations for Creality K2 AND CFS (Creality FIlament System) Combo!
 
+K2 Combo is a new 3D printer from Creality, with a 260x260x206mm print volume and a filament system that can handle up to 4 spools of filament, codename CFS for Creality Filament System.
+
+Until last two months I tought multi filament systems were not for me. My experiences in the past vere not ultra positive, I print since 2015 and was never conviced by the complexity and the unreliable process, then ignored these systems.
+
+But now, with the K2/CFS combo, I changed my mind. What I dislike the most in 3D printers, is the filament change. I print a lot of different models, with different filaments, and I have to change the filament often. I clearly don't want to use a multi color system, but I want to be able to load different filaments and be able to switch from one to another easily. With the CFS system, and I suppose this is the same with other multi filament systems, I can load 4 different filaments and switch from one to another in a few seconds. It is relly working for me and I like the comfort it brings: just put a filament in the CFS system, insert few centimeters of filament in the hole and the system manage the rest. No more mess with filament change, no more time lost.
+
+---
+
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Creality Software for slicing and printing](#creality-software-for-slicing-and
+-printing)
+- [Unboxing](#unboxing)
+- [SSH](#ssh)
+  - [Connecting to the printer and first commands](#connecting-to-the-printer-and
+-first-commands)
+  - [Disk space](#disk-space)
+
 
 ## Introduction
 
@@ -12,7 +31,7 @@ I want to precise that:
 - I only paid a total amount of 89€ (no typo) for the combo and the shipping
 - I am not affiliated with Creality in any way, nor JD.com
 
-I started to search for information about the printer and the combo but there was nothing online, except a mention of a 260*260*260mm print volume model for the K2 serie on the chinese Creality website.
+I started to search for information about the printer and the combo but there was nothing online, except a mention of a 260x260x260mm print volume model for the K2 serie on the chinese Creality website.
 
 - I don't want especially to share my initial experience because it is another (nice) 3D printers, but I want to share the information I found about the combo, as it is not documented anywhere else.
 
@@ -27,12 +46,17 @@ The official software is good enough for the tasks. It is available on the Creal
 
 As my OS is (kind of) Ubunutu, I downloaded (and updated) for my previous printers the AppImage file and it worked fine... For the new K2/CFS combo, it works too, the printer is recognized and I can slice and print as done previously with the K1 series printers.
 
+![Creality Print interface](./resources/creality_print.png)
+
+
 ## Unboxing
 
 I hate these videos where people unbox a product. Anyway, with this only China printer (right now), you got some only Chinese document. It took my spouse and I one hour or two, understanding the pictures and preparing the printer, to be ready for a print. A bit uncomfortable at the begining, you don't want to mess, but finally not hard task.
 
 The printer is well packed, and the CFS box is inside the K2 box. The CFS box is quite heavy, as it contains the filament spools and the CFS system itself. So it is a bit hard to handle alone, for arms (and two brains)are better than a solo expedition.
 
+
+---
 
 ## SSH
 
@@ -133,16 +157,42 @@ root@K2-3F67:/mnt/UDISK/creality/local_gcode/humbnail# ls
 ```
 
 
+## Web services
+
+With the `netstat` command, we can see the web services running on the printer:
+
+```
+root@K2-3F67:~# netstat -tulnp
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+tcp        0      0 0.0.0.0:8000            0.0.0.0:*               LISTEN      3474/webrtc_local
+tcp        0      0 192.168.1.158:37515     0.0.0.0:*               LISTEN      3474/webrtc_local
+tcp        0      0 0.0.0.0:5037            0.0.0.0:*               LISTEN      1847/adbd
+tcp        0      0 0.0.0.0:9999            0.0.0.0:*               LISTEN      3780/web-server
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      3780/web-server
+tcp        0      0 0.0.0.0:7125            0.0.0.0:*               LISTEN      3840/python
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      4452/dropbear
+tcp        0      0 0.0.0.0:4408            0.0.0.0:*               LISTEN      3101/nginx.conf -g 
+tcp        0      0 fe80::5a41:46ff:fea9:d4f0:53093 :::*                    LISTEN      3474/webrtc_local
+tcp        0      0 :::22                   :::*                    LISTEN      4452/dropbear
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                           2945/mdns
+udp        0      0 192.168.1.158:44120     0.0.0.0:*                           3474/webrtc_local
+udp        0      0 :::5353                 :::*                                2945/mdns
+udp        0      0 fe80::5a41:46ff:fea9:d4f0:33981 :::*                                3474/webrtc_local
+```
+
+### FLUIDD
 
 
+There is a web interface - FLUIDD - on port 4408.
+
+[Fluidd](https://docs.fluidd.xyz/) is a lightweight & responsive user interface for (Klipper)[https://www.klipper3d.org/], the 3D printer firmware.
+
+![FLUIDD interface](./resources/fluidd.png)
 
 
+With fluidd we can have some informations about the system and a kind of telemetry:
 
-
-
-
-
-
-
+![FLUIDD Telemetry](./resources/fluidd_telemetry.png)
 
 
