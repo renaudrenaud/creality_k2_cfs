@@ -27,12 +27,10 @@ It is relly working for me and I like the comfort it brings: just put some roll 
 # Table of Contents
 
 - [Introduction](#introduction)
-- [Creality Software for slicing and printing](#creality-software-for-slicing-and
--printing)
+- [Creality Software for slicing and printing](#creality-software-for-slicing-and-printing)
 - [Unboxing](#unboxing)
 - [SSH](#ssh)
-  - [Connecting to the printer and first commands](#connecting-to-the-printer-and
--first-commands)
+  - [Connecting to the printer and first commands](#connecting-to-the-printer-and-first-commands)
   - [Disk space](#disk-space)
 
 
